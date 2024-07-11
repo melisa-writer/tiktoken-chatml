@@ -37,6 +37,7 @@ def get_encoding(encoding_name: str) -> Encoding:
             special_tokens={
                 "<|im_start|>": 200018,
                 "<|im_end|>": 199999,
+                "<|idontknow|>": 200000,
                 "<|endoftext|>": 199999,
             },
         )
@@ -58,6 +59,7 @@ def get_encoding(encoding_name: str) -> Encoding:
             special_tokens={
                 "<|im_start|>": 100276,
                 "<|im_end|>": 100257,
+                "<|idontknow|>": 100258,
                 "<|endoftext|>": 100257,
             },
         )
@@ -75,6 +77,7 @@ def get_encoding(encoding_name: str) -> Encoding:
                 "<|im_start|>": 100276,
                 "<|im_end|>": 100257,
                 "<|endoftext|>": 100257,
+                "<|idontknow|>": 100258,
             },
         )
 
