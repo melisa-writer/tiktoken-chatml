@@ -35,10 +35,10 @@ def get_encoding(encoding_name: str) -> Encoding:
             pat_str=o200k_base._pat_str,
             mergeable_ranks=o200k_base._mergeable_ranks,
             special_tokens={
-                "<|im_start|>": 200018,
-                "<|im_end|>": 199999,
-                "<|idontknow|>": 200000,
-                "<|endoftext|>": 199999,
+                "<|im_start|>": 199999,
+                "<|im_end|>": 200000,
+                "<|idontknow|>": 200001,
+                "<|endoftext|>": 200018,
             },
         )
 
@@ -57,10 +57,10 @@ def get_encoding(encoding_name: str) -> Encoding:
             pat_str=cl100k_base._pat_str,
             mergeable_ranks=cl100k_base._mergeable_ranks,
             special_tokens={
-                "<|im_start|>": 100276,
-                "<|im_end|>": 100257,
-                "<|idontknow|>": 100258,
-                "<|endoftext|>": 100257,
+                "<|im_start|>": 100257,
+                "<|im_end|>": 100258,
+                "<|idontknow|>": 100259,
+                "<|endoftext|>": 100276,
             },
         )
     elif encoding_name == "gpt2-chatml":
@@ -74,10 +74,10 @@ def get_encoding(encoding_name: str) -> Encoding:
             pat_str=gpt2_base._pat_str,
             mergeable_ranks=gpt2_base._mergeable_ranks,
             special_tokens={
-                "<|im_start|>": 100276,
-                "<|im_end|>": 100257,
-                "<|endoftext|>": 100257,
-                "<|idontknow|>": 100258,
+                "<|im_start|>": 100257,
+                "<|im_end|>": 100258,
+                "<|endoftext|>": 100260,
+                "<|idontknow|>": 100259,
             },
         )
 
